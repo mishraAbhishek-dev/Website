@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Someone Special ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', sans-serif;
+        scroll-behavior:smooth;
+    }
+
+    body{
+        overflow-x:hidden;
+        background:linear-gradient(120deg,#ff9a9e,#fad0c4);
+    }
+
+    section{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+        color:white;
+        padding:20px;
+    }
+
+    h1{
+        font-size:60px;
+        margin-bottom:20px;
+        animation:fadeIn 2s ease;
+    }
+
+    h2{
+        font-size:40px;
+        margin-top:20px;
+    }
+
+    p{
+        font-size:22px;
+        max-width:600px;
+        line-height:1.5;
+    }
+
+    .heart{
+        font-size:120px;
+        animation:beat 1s infinite;
+    }
+
+    .teddy{
+        font-size:100px;
+        animation:float 3s infinite ease-in-out;
+    }
+
+    .scroll{
+        position:absolute;
+        bottom:20px;
+        font-size:18px;
+        animation:fadeIn 3s infinite alternate;
+    }
+
+    @keyframes beat{
+        0%{transform:scale(1)}
+        50%{transform:scale(1.2)}
+        100%{transform:scale(1)}
+    }
+
+    @keyframes float{
+        0%{transform:translateY(0)}
+        50%{transform:translateY(-20px)}
+        100%{transform:translateY(0)}
+    }
+
+    @keyframes fadeIn{
+        from{opacity:0; transform:translateY(40px)}
+        to{opacity:1; transform:translateY(0)}
+    }
+
+    /* second section */
+    .sorry{
+        background:linear-gradient(120deg,#ff758c,#ff7eb3);
+    }
+
+    button{
+        margin-top:30px;
+        padding:15px 30px;
+        border:none;
+        border-radius:30px;
+        font-size:20px;
+        background:white;
+        color:#ff4b6e;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        transform:scale(1.1);
+        background:#ffe6ea;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- ❤️ FIRST PAGE -->
+<section>
+    <div class="heart">❤️</div>
+    <div class="teddy">🧸</div>
+    <h1>I LOVE YOU</h1>
+    <p>You are the most special person in my life 💕</p>
+    <div class="scroll">Scroll Down ↓</div>
+</section>
+
+<!-- 🥺 SECOND PAGE -->
+<section class="sorry">
+    <h1>I'm Really Sorry 😔</h1>
+    <p>
+        I never wanted to hurt you.  
+        You mean the world to me 🌎❤️  
+        Please forgive me and let's make everything beautiful again.
+    </p>
+
+    <button onclick="showLove()">Click if you forgive me 💌</button>
+    <h2 id="msg"></h2>
+</section>
+
+<script>
+function showLove(){
+    document.getElementById("msg").innerHTML="Yaaay! I love you forever ❤️🥰";
+}
+</script>
+
+</body>
+</html>
